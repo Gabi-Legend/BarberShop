@@ -44,6 +44,33 @@
   margin: 0;
 }
 
+.programare {
+  background-color: #ffb400;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.8rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease,
+    transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(255, 180, 0, 0.4);
+  margin-top: 1rem;
+  user-select: none;
+}
+
+.programare:hover {
+  background-color: #ffce48;
+  box-shadow: 0 6px 12px rgba(255, 180, 0, 0.7);
+  transform: scale(1.05);
+}
+
+.programare:active {
+  transform: scale(0.98);
+  box-shadow: 0 3px 6px rgba(255, 180, 0, 0.6);
+}
+
 @media (max-width: 1024px) {
   .title {
     font-size: 2rem;

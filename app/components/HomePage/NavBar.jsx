@@ -12,7 +12,7 @@ export default function NavBar() {
 
       <ul className={`${styles.pages} ${isOpen ? styles.active : ""}`}>
         <li>
-          <Link href="#">Acasa</Link>
+          <Link href="/">Acasa</Link>
         </li>
         <li>
           <Link href="#">Programare</Link>
