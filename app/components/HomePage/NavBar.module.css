@@ -4,10 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   position: sticky;
   top: 0;
   z-index: 999;
+  height: var(--navbar-h);
 }
 
 .logo {
@@ -59,7 +60,7 @@
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 70px;
+    top: var(--navbar-h);
     right: 0;
     background-color: black;
     width: 200px;
