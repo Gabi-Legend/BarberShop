@@ -15,12 +15,15 @@
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
+  color: white;
   letter-spacing: 1px;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .logo:hover {
   color: #ffb400;
+  transform: scale(1.02);
 }
 
 .pages {

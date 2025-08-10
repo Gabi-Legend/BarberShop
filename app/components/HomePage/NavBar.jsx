@@ -8,7 +8,9 @@ export default function NavBar() {
 
   return (
     <nav className={styles.navbar}>
-      <h1 className={styles.logo}>BarberShop</h1>
+      <Link href="/" className={styles.logo}>
+        BarberShop
+      </Link>
 
       <ul className={`${styles.pages} ${isOpen ? styles.active : ""}`}>
         <li>
