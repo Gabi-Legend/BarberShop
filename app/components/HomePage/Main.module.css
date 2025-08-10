@@ -57,8 +57,9 @@
   .main_container {
     flex-direction: column;
     text-align: center;
-    height: auto;
-    min-height: calc(100svh - var(--navbar-h));
+    height: calc(100svh - 23svh);
+    min-height: 0;
+    overflow: hidden;
     padding: 1.5rem;
   }
   .desc {
