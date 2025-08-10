@@ -18,7 +18,7 @@ export default function NavBar() {
           <Link href="#">Programare</Link>
         </li>
         <li>
-          <Link href="#">Contact</Link>
+          <Link href="/contact">Contact</Link>
         </li>
       </ul>
 
