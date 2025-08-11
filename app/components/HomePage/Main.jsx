@@ -1,5 +1,6 @@
 import styles from "@/app/components/HomePage/Main.module.css";
 import Image from "next/image";
+import Link from "next/link";
 import BarberLogo from "@/app/assets/barber_logo.avif";
 
 export default function Main() {
@@ -18,7 +19,9 @@ export default function Main() {
                 și o atmosferă relaxantă pentru un look impecabil.
               </p>
             </div>
-            <button className={styles.programare}>Programare</button>
+            <Link href="/programare">
+              <button className={styles.programare}>Programare</button>
+            </Link>
           </div>
         </div>
       </div>

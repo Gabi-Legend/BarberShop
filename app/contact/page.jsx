@@ -7,19 +7,28 @@ export default function Contact() {
       <NavBar />
       <div className={styles.contactContainer}>
         <div className={styles.contactCard}>
-          <h1 className={styles.contactTitle}>Pagina de Contact</h1>
+          <h1 className={styles.contactTitle}>Contact BarberShop Lux</h1>
 
-          <div>
-            <label className={styles.contactLabel}>Email</label>
-            <input type="email" className={styles.contactInput} />
+          <div className={styles.infoSection}>
+            <p className={styles.infoItem}>
+              📍 Str. Mihai Eminescu 12, Botoșani
+            </p>
+            <p className={styles.infoItem}>
+              📞 <a href="tel:+40999123456">+40 999 123 456</a>
+            </p>
+            <p className={styles.infoItem}>
+              💬{" "}
+              <a
+                href="https://wa.me/40999123456"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
+            </p>
+            <p className={styles.infoItem}>✉ contact@barbershoplux.ro</p>
+            <p className={styles.infoItem}>🕒 Luni - Sâmbătă: 09:00 - 19:00</p>
           </div>
-
-          <div>
-            <label className={styles.contactLabel}>Mesaj</label>
-            <textarea rows={4} className={styles.contactTextarea}></textarea>
-          </div>
-
-          <button className={styles.trimite}>Trimite</button>
         </div>
       </div>
     </>

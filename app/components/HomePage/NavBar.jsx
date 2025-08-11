@@ -17,7 +17,7 @@ export default function NavBar() {
           <Link href="/">Acasa</Link>
         </li>
         <li>
-          <Link href="#">Programare</Link>
+          <Link href="/programare">Programare</Link>
         </li>
         <li>
           <Link href="/contact">Contact</Link>
