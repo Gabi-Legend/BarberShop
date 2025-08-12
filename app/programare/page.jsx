@@ -1,6 +1,7 @@
 import styles from "@/app/programare/page.module.css";
 import NavBar from "../components/HomePage/NavBar";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Programare() {
   const servicii = [
@@ -48,7 +49,13 @@ export default function Programare() {
             <p className={styles.desc}>{service.desc}</p>
             <div className={styles.footer}>
               <span className={styles.price}>{service.price}</span>
-              <button className={styles.bookBtn}>Rezervă</button>
+              <Link
+                href={`/programare/rezerva?service=${encodeURIComponent(
+                  service.title
+                )}`}
+              >
+                <button className={styles.bookBtn}>Rezervă</button>
+              </Link>
             </div>
           </div>
         ))}
