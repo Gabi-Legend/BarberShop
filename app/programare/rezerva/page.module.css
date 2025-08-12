@@ -13,9 +13,10 @@
   border-radius: 16px;
   padding: 2rem;
   width: 100%;
-  max-width: 420px;
+  max-width: 450px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
+  animation: fadeIn 0.4s ease;
 }
 
 .title {
@@ -30,12 +31,30 @@
   gap: 1rem;
 }
 
-.input {
+.input,
+.select,
+.datePicker {
   padding: 0.7rem 1rem;
   border-radius: 8px;
   border: none;
   outline: none;
   font-size: 1rem;
+  width: 100%;
+}
+
+.datePickerWrapper {
+  text-align: left;
+}
+
+.label {
+  display: block;
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+.select {
+  background: white;
 }
 
 .button {
@@ -55,4 +74,38 @@
 
 .button:active {
   transform: scale(0.95);
+}
+
+.react-datepicker {
+  font-family: inherit;
+}
+
+.react-datepicker__header {
+  background-color: #ffb400;
+  border-bottom: none;
+}
+
+.react-datepicker__day--selected {
+  background-color: #ffb400 !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #ffce48 !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
 }
