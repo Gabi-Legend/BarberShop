@@ -1,4 +1,5 @@
 "use client";
+
 import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
@@ -7,7 +8,7 @@ import styles from "./page.module.css";
 
 export default function RezervaPage() {
   const searchParams = useSearchParams();
-  const service = searchParams.get("service");
+  const service = searchParams.get("service") || "Serviciu nedefinit";
 
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
@@ -22,9 +23,23 @@ export default function RezervaPage() {
       return;
     }
 
+    const rezervare = {
+      service,
+      name,
+      phone,
+      date: date.toLocaleDateString(),
+      time,
+    };
+
+    console.log("Rezervare:", rezervare);
     alert(
       `Rezervare confirmată!\nServiciu: ${service}\nNume: ${name}\nTelefon: ${phone}\nData: ${date.toLocaleDateString()} ${time}`
     );
+
+    setName("");
+    setPhone("");
+    setDate(null);
+    setTime("");
   };
 
   return (
